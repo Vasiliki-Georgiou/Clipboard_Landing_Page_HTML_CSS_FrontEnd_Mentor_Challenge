@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    background: url(images/bg-header-mobile.png) no-repeat;
+    background-size: contain;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+header {
+    width: 300px;
+}
+
+header h1, h2, h3, a {
+    color: hsl(210, 10%, 33%);
+}
+
+header p, p {
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+}
+
+header button, .presentation button {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 16px;
+    padding: 10px;
+    border: 0;
+    font-family: inherit;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+header button.ios,
+.presentation button.ios {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 2px 5px 2px hsl(171, 52%, 58%, 0.3);
+}
+
+header button.ios:active,
+.presentation button.ios:active {
+    background-color: hsl(171, 52%, 58%, 1);
+}
+
+header button.mac,
+.presentation button.mac {
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 2px 5px 2px hsl(233, 94%, 75%, 0.3);
+}
+
+header button.mac:active,
+.presentation button.mac:active {
+    background-color: hsl(233, 94%, 75%, 1);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation {
+    width: 300px;
+    margin-top: 60px;
+}
+
+.capabilities, 
+.clipboard, 
+.snippets {
+    width: 300px;
+}
+
+.capabilities img, 
+.clipboard img {
+    margin-top: 32px;
+    width: 100%;
+}
+
+.capabilities div:first-child {
+    margin-bottom: 40px;
+}
+
+.capabilities div:last-child p {
+    margin-bottom: 40px
+}
+
+.clipboard {
+    margin-top: 60px;
+}
+
+.clipboard div {
+    margin-top: 60px;
+}
+
+.snippets div {
+    margin-top: 60px;
+}
+
+.icons {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icons img {
+    width: 80%;
+    display: inline-block;
+    margin-top: 60px;
+}
+
+.presentation:last-child {
+    margin: 100px 0;
+}
+
+footer {
+    width: 100%;
+    background-color: hsl(220, 18%, 97%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer .logo img {
+    width: 8%;
+    margin: 32px 0;
+}
+
+.links a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 16px; 
+}
+
+.links a:active, 
+.social-media a:active {
+    color: hsl(171, 66%, 44%);
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    padding: 25px;
+}
