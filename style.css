@@ -14,7 +14,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 20px 0;
+    padding-top: 100px;
+    margin: 0;
     font-size: 18px;
     text-align: center;
 }
@@ -36,7 +37,7 @@ header button, .presentation button {
     width: 100%;
     margin: 10px 0;
     border-radius: 16px;
-    padding: 10px;
+    padding: 12px;
     border: 0;
     font-family: inherit;
     font-weight: 600;
@@ -157,4 +158,122 @@ footer .logo img {
 .social-media a {
     display: inline-block;
     padding: 25px;
+}
+
+@media(min-width: 1024px) {
+    body {
+        background: url(images/bg-header-desktop.png) no-repeat;
+        background-size: 100%;
+        font-size: 14px;
+    }
+
+    header {
+        width: 900px;
+    }
+
+    header p {
+        margin: 25px 100px;
+    }
+
+    header button, .presentation button {
+        display: inline-block;
+        width: 25%;
+        margin-right: 10px;
+    }
+
+    .presentation,
+    .capabilities, 
+    .clipboard, 
+    .snippets {
+        width: 900px;
+    }   
+
+    .capabilities {
+        display: flex;
+    }
+
+    .capabilities img {
+        width: 150%;
+        transform: translateX(-50%);
+    }
+
+    .capabilities div:last-child {
+        margin: 35px 0 0 0;
+        transform: translateY(10%);
+        text-align: left;
+    }
+
+    .clipboard p {
+        padding: 0 80px;
+        margin-bottom: 24px;
+    }
+
+    .snippets {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .snippets div {
+        width: 100%;
+        margin-right: 16px;
+    }
+
+    .icons {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .icons img {
+        padding: 0 20px;
+        width: 15%;
+    }
+
+    .presentation p {
+        margin: 20px 100px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    footer .links {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 16px;
+    }
+
+    footer .links a {
+        display: inline-block;
+        width: 30%;
+        text-align: left;
+        padding-left: 32px;
+    }
+
+    .links #one {
+        order: -1;
+    }
+
+    .links #two {
+        order: 1;
+    }
+
+    .links #four {
+        order: 5;
+    }
+
+    footer .logo img {
+        width: 30%;
+    }
+
+    footer .social-media {
+        transform: translateY(15%);
+    }
+
+    .social-media a {
+        padding: 15px;
+    }
+
 }
